@@ -40,7 +40,8 @@ float y = punto->coordenadas[1];
     return dist; 
 
 };
-void clasificarPunto(PuntoTrayectoria &punto) {
+
+void clasificarPunto(PuntoTrayectoria &punto) { 
     if (punto.distanciaOrigen <=  5) {
 punto.clasificacion = " CERCANO";
 } else if (punto.distanciaOrigen <=  10) {
@@ -52,6 +53,21 @@ punto.clasificacion = "LEJANO";
 punto.clasificacion = "EXTREMO";
     }
 }
+//Encontrsr el punto mas alejado 
+
+PuntoTrayectoria* obtenerPuntoMasAlejado(PuntoTrayectoria puntos[], int cantidad) {
+PuntoTrayectoria* masAlejado = &puntos[0];
+
+ for (int i = 1; i < cantidad; i++) {
+if 
+(puntos[i].distanciaOrigen > masAlejado->distanciaOrigen) {
+masAlejado = &puntos[i];
+        }
+    }
+    
+    return masAlejado;
+}
+
 
 
 
