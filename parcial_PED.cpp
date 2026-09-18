@@ -74,6 +74,7 @@ masAlejado = &puntos[i];
 int main()
 { 
     PuntoTrayectoria p1;
+    //falto desarrollo 
     
 
     return 0;
