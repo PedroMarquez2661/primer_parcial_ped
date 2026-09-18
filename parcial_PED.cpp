@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
-struct PuntoTrayectoria
-{
-     int id;
+
+struct PuntoTrayectoria {
+    int id;
     string nombre;
-    float coordenadas[3][3][3];
-    int clasifacion; //1 cerca / 2 medio / 3 lejos
-    int DistanciaDesdeOrigen;
-
-
+    float coordenadas[3];
+    float distanciaOrigen;
+    string clasificacion;
+};
+void regristaroutni( ouhto ¿trayencrio & djsa
+co)
 };
 
 void MotrasEstudiante(PuntoTrayectoria  int id,);
