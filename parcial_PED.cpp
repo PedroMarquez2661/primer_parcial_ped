@@ -9,6 +9,24 @@ struct PuntoTrayectoria {
     float distanciaOrigen;
     string clasificacion;
 };
+//funcionalidad del void para los puntos de la trayectoria 
+void RegistrarPunto(PuntoTrayectoria &punto) {
+    cout << "identificador de punto: "; //id
+    cin >> punto.id; //se revice 
+    cin.ignore();
+    
+    cout << "Nombre o descripcion: ";
+    getline(cin, punto.nombre); //getline por el nombre
+    
+    cout << "Coordenada X: "; //entras de coordes, por medio de arrays
+    cin >> punto.coordenadas[0];
+    cout << "Coordenada Y: ";
+    cin >> punto.coordenadas[1];
+    cout << "Coordenada Z: ";
+    cin >> punto.coordenadas[2];
+}
+
+
 void regristaroutni( ouhto ¿trayencrio & djsa
 co)
 };
