@@ -42,12 +42,16 @@ float y = punto->coordenadas[1];
 };
 void clasificarPunto(PuntoTrayectoria &punto) {
     if (punto.distanciaOrigen <=  5) {
-punto.clasificacion = "   CERCANO";
+punto.clasificacion = " CERCANO";
 } else if (punto.distanciaOrigen <=  10) {
-punto.clasificacion = "  INTERMEDIO";
+punto.clasificacion = "INTERMEDIO";
     } else if   
     (punto.distanciaOrigen <=  20) {
-punto.clasificacion = "     LEJANO";
+punto.clasificacion = "LEJANO";
+} else {
+punto.clasificacion = "EXTREMO";
+    }
+}
 
 
 
