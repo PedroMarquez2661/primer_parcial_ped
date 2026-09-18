@@ -29,14 +29,19 @@ float calcularDistancia(PuntoTrayectoria *punto) {
  float x = punto->coordenadas[0]; 
 float y = punto->coordenadas[1];
   float z = punto->coordenadas[2];
-    float suma = (x * x) + (y * y) + (z * z);
+    float suma = (x * x) + (y * y) + (z * z); //2xx2
+    float dist = suma / 2.0;
+ float temp = 0.0;
+    while (dist != temp) {
+          temp = dist;
+               dist = (suma / temp + temp) / 2.0;
+    }
+    punto->distanciaOrigen = dist;
+    return dist; 
 
-    
 
 
 
-void regristaroutni( ouhto ¿trayencrio & djsa
-co)
 };
 
 void MotrasEstudiante(PuntoTrayectoria  int id,);
