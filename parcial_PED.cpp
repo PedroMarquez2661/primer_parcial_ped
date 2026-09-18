@@ -39,10 +39,17 @@ float y = punto->coordenadas[1];
     punto->distanciaOrigen = dist;
     return dist; 
 
-
-
-
 };
+void clasificarPunto(PuntoTrayectoria &punto) {
+    if (punto.distanciaOrigen <=  5) {
+punto.clasificacion = "   CERCANO";
+} else if (punto.distanciaOrigen <=  10) {
+punto.clasificacion = "  INTERMEDIO";
+    } else if   
+    (punto.distanciaOrigen <=  20) {
+punto.clasificacion = "     LEJANO";
+
+
 
 void MotrasEstudiante(PuntoTrayectoria  int id,);
 {
@@ -58,4 +65,6 @@ int main()
     
 
     return 0;
+
+
 }
