@@ -25,6 +25,14 @@ void RegistrarPunto(PuntoTrayectoria &punto) {
     cout << "Coordenada Z: ";
     cin >> punto.coordenadas[2];
 }
+float calcularDistancia(PuntoTrayectoria *punto) {
+ float x = punto->coordenadas[0]; 
+float y = punto->coordenadas[1];
+  float z = punto->coordenadas[2];
+    float suma = (x * x) + (y * y) + (z * z);
+
+    
+
 
 
 void regristaroutni( ouhto ¿trayencrio & djsa
